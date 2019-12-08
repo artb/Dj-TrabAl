@@ -3,14 +3,19 @@
 
 <head>
     <title>Trab Algebra</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        function call_counter(url,pk) {
+            alert("VC E FODA")
+        }
+    </script>
     <link rel="Stylesheet" href="./css/homepage/styles.css" type="text/css" />
 </head>
 
 <body>
     <form name="aspnetForm" method="post" action="./" id="aspnetForm">
 
-        <script type="text/javascript">
-            //<![CDATA[
+        <!-- <script type="text/javascript">
             var theForm = document.forms['aspnetForm'];
             if (!theForm) {
                 theForm = document.aspnetForm;
@@ -23,21 +28,10 @@
                     theForm.submit();
                 }
             }
-            //]]>
-        </script>
-
-
-        <script
-            src="/matrix-calculator/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZEVOSuLOiF6QSNORV3p03dafbr9RqkWVjMH53PCn0VL3ulhAOqFR4bQkbSqss1BLOA2&amp;t=636934993199995647"
-            type="text/javascript"></script>
+        </script> -->
 
         <div>
 
-            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="77E6ACB7" />
-            <input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE"
-                value="HCwJgl881E3ecm9yZ3d1bvkvfaeqR_hLsSUUCqK0FDvOFnm2nT8sbkwVPm70qjTUYLyn50aet-uOTVBnRWlHJoFNcmDrP5R2Umm6h5x9Cq41" />
-            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
-                value="QfogsB6ePbhPLmuhEPAwBoiYaZnq5QU/zHLsflImfDER2fVcKB/SSdLMTMzh+96sXsBbelv9PCZID5DAKi323r8OQ4yURFxugbbh9eIliOBZwWHyZx5CsnBFYYVey0h1" />
         </div>
         <div class="page">
             <div class="header">
@@ -105,12 +99,17 @@
                         </tr>
                     </table>
                     <br />
-                    &nbsp;<input type="submit" name="ctl00$MainContent$calculate" value="Calcular"
-                        onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$calculate&quot;, &quot;&quot;, false, &quot;&quot;, &quot;calculate.aspx&quot;, false, false))"
-                        id="ctl00_MainContent_calculate" />
+                    &nbsp;<input type="submit" name="ctl00$MainContent$calculate" value="Calcular"/>
                     <br />
                     <br />
                 </div>
+
+                <button onclick="call_counter('http://www.google.com', 12345);">
+                    I update object 12345
+                </button>
+                <button onclick="call_counter('http://www.yahoo.com', 999);">
+                    I update object 999
+                </button>
 
             </div>
             <div class="clear">

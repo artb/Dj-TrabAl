@@ -10,3 +10,6 @@ def about(request):
 
 def result(request):
     return render(request, 'result.html')
+
+def chewie(request):
+    return render(request,'chewie.html')
